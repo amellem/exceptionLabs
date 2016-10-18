@@ -11,11 +11,12 @@ import javax.swing.JOptionPane;
 public class InputOutputGui {
     private NameService nameService;
 
+   
     public InputOutputGui() {
         nameService = new NameService();
     }
 
-    public void startConversation() {
+    public void startConversation() throws InvalidLastNameException{
         
         String fullName = JOptionPane.showInputDialog("Enter full name:");
         String lastName = nameService.extractLastName(fullName);

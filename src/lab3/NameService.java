@@ -18,9 +18,15 @@ public class NameService {
      * @throws YourCustomExceptionName if fullName is null or empty or has
      * fewer than two parts
      */
-    public String extractLastName(String fullName) {
+    public String extractLastName(String fullName){
         String lastName = null;
         
+        String[] nameList = fullName.split(" ");
+        if(nameList.length < 2 || nameList == null){
+            throw new InvalidLastNameException();
+        }
+        
+        lastName = nameList[nameList.length - 1];
         // put your code here
         
         return lastName;
