@@ -12,7 +12,7 @@ package lab2;
  */
 public class Challenge2 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         
         new InputOutputGui().startConversation();
     }

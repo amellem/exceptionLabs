@@ -21,6 +21,13 @@ public class NameService {
     public String extractLastName(String fullName) {
         String lastName = null;
         
+        String[] nameList = fullName.split(" ");
+        
+        if(nameList == null || nameList.length < 2 || nameList.length == 0){
+            throw new IllegalArgumentException("Invalid input");
+        } 
+            lastName = nameList[1];
+        
         // write your code here to extract the lastName and store in the
         // above local variable
         

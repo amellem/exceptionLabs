@@ -6,7 +6,7 @@ package lab0;
  */
 public class Startup {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         Employee emp = new Employee("Jim","Smith","3333333333",28);
         
