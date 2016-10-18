@@ -16,7 +16,7 @@ public class InvalidLastNameException extends Exception{
     public InvalidLastNameException() {
         super(InvalidLastNameException.msg);
     }
-
+ 
     public InvalidLastNameException(String string) {
         super(InvalidLastNameException.msg);
     }
