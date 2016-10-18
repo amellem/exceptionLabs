@@ -39,7 +39,7 @@ public class Challenge1 {
         String[] nameIndex = fullName.split(" ");
         lastName = nameIndex[LAST_NAME_IDX];
         } catch(ArrayIndexOutOfBoundsException e){
-            JOptionPane.showMessageDialog(null, "Please enter your name");
+            JOptionPane.showMessageDialog(null, "Invalid input");
         }      
         
         return lastName;
